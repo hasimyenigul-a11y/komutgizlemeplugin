@@ -1,0 +1,28 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Java 25 kur
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+
+      - name: Derle
+        run: mvn -B package
+
+      - name: Jar'i yukle
+        uses: actions/upload-artifact@v4
+        with:
+          name: KomutGizle
+          path: target/KomutGizle.jar
