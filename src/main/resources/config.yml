@@ -1,0 +1,18 @@
+# OP olmayan oyuncularin gorebilecegi / kullanabilecegi komutlar (/ olmadan, kucuk harf)
+izinli-komutlar:
+  - help
+  - spawn
+  - msg
+  - tell
+  - w
+  - r
+  - home
+  - sethome
+  - tpa
+  - tpaccept
+  - tpdeny
+
+# true: izinli olmayan komut yazilirsa calistirilmaz
+komut-engelle: true
+
+engel-mesaji: "&cBu komutu kullanamazsin."

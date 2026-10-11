@@ -1,0 +1,15 @@
+name: KomutGizle
+version: ${project.version}
+main: me.komutgizle.KomutGizle
+api-version: '1.21'
+description: OP olmayan oyunculara sadece belirli komutlari gosterir.
+commands:
+  komutgizle:
+    description: Config'i yeniler.
+    usage: /komutgizle reload
+permissions:
+  komutgizle.admin:
+    default: op
+  komutgizle.bypass:
+    description: Tum komutlari gorur ve kullanir.
+    default: op
